@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员登录</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href='{{ url_for("static",filename="css/login.css") }}'>
+    <script src='{{ url_for("static",filename="js/jquery-1.8.2.min.js") }}' > </script>
+    <script src="{{ url_for('static',filename='js/login.js') }}"></script>
+</head>
+<body>
+    <div id="box">
+        <div class="logo">
+            <img src='{{ url_for("static",filename="img/logo.png") }}' alt="">
+            <h1>会员登录</h1>
+        </div>
+        <div class="form">
+            <form method='POST' action="{{url_for('login')}}">
+                {{form.csrf_token}}
+                <div>
+                    {{form.phone(placeholder="请输入你的手机号")}}
+                    <span style="color:red">{{ form.phone.errors[0] }}</span>
+                </div>
+                <div>
+                    {{ form.pwsd(placeholder="请输入密码") }}
+                   <span style="color:red">
+                        {{ form.pwsd.errors[0] }}
+                    </span>
+                </div>
+                <div>
+                    <span style="color:red">
+                        {% for msg in get_flashed_messages()  %}
+                            {{ msg }}
+                        {% endfor %}
+                    </span>
+                </div>
+                <div>
+                    {{form.submit}}
+                </div>
+                <div>
+                    <a href={{ url_for('addname') }}><input type="button" value="注册会员"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mui.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/order.css') }}">
+    <script src='{{ url_for("static",filename="js/jquery-1.8.2.min.js") }}' ></script>
+    <script src="{{ url_for('static',filename='js/order.js') }}"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <img src='{{ url_for("static",filename="img/logo.png") }}' alt="">
+            <h1>订单详情</h1>
+        </div>
+        <div class="mui-card-footer">
+            <span class="mui-card-link">创建时间</span>
+            <span class="mui-card-link right">{{ orderno[3] }}</span>
+        </div>
+        <div class="mui-card-footer">
+            <span class="mui-card-link">订单号</span>
+            <span class="mui-card-link right">{{ orderno[0] }}</span>
+        </div>
+        <div class="mui-card-footer">
+            <span class="mui-card-link">商品数量</span>
+            <span class="mui-card-link right">{{ orderno[2] }}</span>
+        </div>
+        <div class="mui-card-footer details">
+            <span class="mui-card-link">详情</span>
+            <span class="mui-card-link">展开</span>
+        </div>
+        <ul class="mui-table-view mui-table-view-chevron goods">
+            {% for dat in product %}
+            <li class="mui-table-view-cell">
+                <span class="mui-navigate-right mui-card-link inde">
+                    关键词
+                </span>
+                <span class="right float-right">{{ dat[0] }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="btn">
+            <button type="button" class="mui-btn mui-btn-primary mui-btn-block" id="submit">确认付款</button>
+            <button type="button" class="mui-btn mui-btn-danger mui-btn-block" id="delete" data-href="{{ url_for('deleteproduct',product=orderno[0]) }}">删除订单</button>
+        </div>
+        <div id="pay" style="background: url({{ url_for('static',filename='img/collection/%d.jpg'%img_url) }});background-size:cover;background-position:center center">
+            <p>长按支付</p><img src="{{ url_for('static',filename='img/collection/%d.jpg'%img_url) }}" alt="">
+        </div>
+    </div>
+</body>
+</html>

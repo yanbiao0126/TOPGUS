@@ -1,0 +1,96 @@
+{% extends 'admin/mode.html' %}
+{% block content %}
+<div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                Amaze UI 表单
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">表单</a></li>
+                <li class="am-active">Amaze UI 表单</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 折线图
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <i class="am-icon-search"></i>
+                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tpl-block">
+                    <div class="am-g">
+                        <div class="am-u-sm-12 am-u-md-6">
+                            <div class="am-btn-toolbar">
+                                <div class="am-btn-group am-btn-group-xs">
+                                    <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</button>
+                                    <button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-save"></span> 保存</button>
+                                    <button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-archive"></span> 审核</button>
+                                    <button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="am-u-sm-12 am-u-md-3">
+                            <div class="am-form-group">
+                                <select data-am-selected="{btnSize: 'sm'}" style="display: none;">
+              <option value="option1">所有类别</option>
+              <option value="option2">IT业界</option>
+              <option value="option3">数码产品</option>
+              <option value="option3">笔记本电脑</option>
+              <option value="option3">平板电脑</option>
+              <option value="option3">只能手机</option>
+              <option value="option3">超极本</option>
+            </select><div class="am-selected am-dropdown " id="am-selected-i4q06" data-am-dropdown="">  <button type="button" class="am-selected-btn am-btn am-dropdown-toggle am-btn-sm am-btn-default">    <span class="am-selected-status am-fl">所有类别</span>    <i class="am-selected-icon am-icon-caret-down"></i>  </button>  <div class="am-selected-content am-dropdown-content">    <h2 class="am-selected-header"><span class="am-icon-chevron-left">返回</span></h2>       <ul class="am-selected-list">                     <li class="am-checked" data-index="0" data-group="0" data-value="option1">         <span class="am-selected-text">所有类别</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="1" data-group="0" data-value="option2">         <span class="am-selected-text">IT业界</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="2" data-group="0" data-value="option3">         <span class="am-selected-text">数码产品</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="3" data-group="0" data-value="option3">         <span class="am-selected-text">笔记本电脑</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="4" data-group="0" data-value="option3">         <span class="am-selected-text">平板电脑</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="5" data-group="0" data-value="option3">         <span class="am-selected-text">只能手机</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="6" data-group="0" data-value="option3">         <span class="am-selected-text">超极本</span>         <i class="am-icon-check"></i></li>            </ul>    <div class="am-selected-hint"></div>  </div></div>
+                            </div>
+                        </div>
+                        <div class="am-u-sm-12 am-u-md-3">
+                            <div class="am-input-group am-input-group-sm">
+                                <input type="text" class="am-form-field">
+                                <span class="am-input-group-btn">
+            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>
+          </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--此部分数据请在 js文件夹下中的 app.js 中的 “百度图表A” 处修改数据 插件使用的是 百度echarts-->
+                    <div class="tpl-echarts tpl-chart-mb" id="tpl-echarts-A" _echarts_instance_="ec_1537200221985" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;"><div style="position: relative; overflow: hidden; width: 1014px; height: 400px; cursor: default;"><canvas width="1014" height="400" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 1014px; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px sans-serif; padding: 5px; left: 153.042px; top: 184px;">周一<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:#59aea2"></span>邮件 : 120<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:#e7505a"></span>媒体 : 220<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:#32c5d2"></span>资源 : 150</div></div>
+                    <div class="portlet-title">
+                        <div class="caption font-green bold">
+                            <span class="am-icon-code"></span> 雷达图
+                        </div>
+                    </div>
+                    <div class="tpl-echarts tpl-chart-mb" id="tpl-echarts-B" _echarts_instance_="ec_1537200221984" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;"><div style="position: relative; overflow: hidden; width: 1014px; height: 400px;"><canvas width="1014" height="400" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 1014px; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas></div><div></div></div>
+
+                    <div class="portlet-title">
+                        <div class="caption font-green bold">
+                            <span class="am-icon-code"></span> 折线柱图
+                        </div>
+                    </div>
+                    <div class="tpl-echarts tpl-chart-mb" id="tpl-echarts-C" _echarts_instance_="ec_1537200221983" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;"><div style="position: relative; overflow: hidden; width: 1014px; height: 400px;"><canvas width="1014" height="400" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 1014px; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas></div><div></div></div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}

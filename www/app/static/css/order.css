@@ -1,0 +1,79 @@
+body{
+    padding:0 5px;
+}
+.content{
+    padding-bottom: 150px;
+}
+.logo{
+    padding-top:5px;
+    text-align:center;
+    max-width:600px;
+    margin:0 auto;
+}
+.logo h1{
+    font-size: 1rem;
+}
+.logo img{
+    width:40%;
+    min-width:150px;
+}
+.mui-card-link{
+    color:#999;
+}
+.right{
+    color:#000;
+}
+.float-right{
+    float:right;
+}
+.mui-table-view-chevron .mui-table-view-cell{
+    padding-right:15px;
+}
+.btn{
+    position:fixed;
+    bottom:5px;
+    left:5px;
+    right:5px;
+    z-index: 5;
+    background:#efeff4;
+}
+#pay{
+    height:100%;
+    width:100%;
+    display:none;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 10;
+}
+#pay img{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    opacity: 0;
+}
+#pay p{
+    box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+    height:18%;
+    color:#fff;
+    font-weight: 800;
+    padding:1em;
+    line-height:3.5em;
+    font-size:1.5em;
+    text-align:center;
+    background: rgb(36,170,57);
+}
+/*.goods{*/
+    /*display: none;*/
+/*}*/
+
+
+button{
+    background: #000000 !important;
+    border:1px solid #000000 !important;
+}

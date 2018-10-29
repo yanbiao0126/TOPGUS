@@ -1,0 +1,4 @@
+SECRET_KEY = 'yanbiao'
+SESSION_PERMANENT = False
+SESSION_USE_SIGNER = True
+SESSION_KEY_PREFIX = 'session:'

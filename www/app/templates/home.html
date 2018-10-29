@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mui.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}">
+    <script src="{{ url_for('static',filename='js/index.js') }}"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <img src='{{ url_for("static",filename="img/logo.png") }}' alt="">
+            <h1>关键词报告</h1>
+        </div>
+        <form class="mui-input-group" action="{{ url_for('addorder') }}" method="post">
+            <div class="mui-input-row">
+                <label>请输入数量</label>
+                <select id="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+                <input type="text" class="mui-input-clear" placeholder="请输入数字" data-input-clear="5"><span class="mui-icon mui-icon-clear mui-hidden"></span>
+            </div>
+            <div id="box">
+                <div class="mui-input-row">
+                    <label>关键词1</label>
+                    <input type="text" name="data0" class="mui-input-clear" placeholder="请输入关键字" data-input-clear="5"><span class="mui-icon mui-icon-clear mui-hidden"></span>
+                </div>
+            </div>
+            <div class="mui-input-row-button">
+                <button type="button" class="mui-btn mui-btn-success mui-btn-block" id="addbtn">添加关键词</button>
+                <button type="submit" class="mui-btn mui-btn-primary mui-btn-block">生成订单</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

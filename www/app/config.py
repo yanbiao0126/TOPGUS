@@ -1,0 +1,7 @@
+import os
+
+SECRET_KEY = os.urandom(24)
+SECRET_KEY = 'TOPGUS'
+SESSION_PERMANENT = False
+SESSION_USE_SIGNER = True
+SESSION_KEY_PREFIX = 'session:'

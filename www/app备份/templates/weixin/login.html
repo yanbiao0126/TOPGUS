@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关键词调研报告</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href={{ url_for('static',filename='weixin/css/login.css') }}>
+</head>
+<body>
+    <div id="box">
+        <div class="logo">
+            <img src={{ url_for('static',filename='weixin/img/logo.png') }} alt="">
+            <h1>关键词调研报告</h1>
+        </div>
+        <div class="form">
+            <from>
+                <div>
+                    <input type="text" placeholder="请输入你的关键词" name="title">
+                </div>
+                <div>
+                    <input type="text" placeholder="请输入你的邮箱" name='email'>
+                </div>
+                <div>
+                    <input type="text" placeholder="请输入你的手机号" name="phone">
+                    <button class="get_phone">获取验证码</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="接收验证码" name="code">
+                </div>
+                <div>
+                    <button type="submit">提交</button>
+                </div>
+            </from>
+        </div>
+    </div>
+</body>
+</html>

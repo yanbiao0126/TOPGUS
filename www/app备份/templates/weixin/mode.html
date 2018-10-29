@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href={{ url_for('static',filename='weixin/css/amazeui.min.css') }}>
+    <link rel="stylesheet" href={{ url_for('static',filename='weixin/css/amazeui.flat.min.css') }}>
+    <link rel="stylesheet" href={{ url_for('static',filename='weixin/css/mode.css') }}>
+</head>
+<body>
+<div class="navtable">
+    <div class="content">
+    {% block content %}{% endblock %}
+    </div>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">商品</a></li>
+        <li><a href="#">购物车</a></li>
+        <li><a href="#">我的</a></li>
+    </ul>
+</div>
+</body>
+</html>
